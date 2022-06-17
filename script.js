@@ -20,6 +20,7 @@ function loadTweets() {
   axios.get("http://localhost:5000/tweets").then(res => {
     const tweets = res.data;
     let tweetsHtml = '';
+    console.log(tweets);
 
     for (const tweet of tweets) {
       tweetsHtml += `
